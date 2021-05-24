@@ -12,28 +12,29 @@
     $rows = 4; 
     $columns = 4; 
     $k = 1;
-    $matrix = array(array());
+    $matrix = array(array()); ?>
+    
+    <table>
+    
+        <?php for($i = 0; $i < $rows; $i++){ ?>
+        
+            <tr>
+        
+        <?php for($j = 0; $j < $columns; $j++){ ?>
+        
+            <td>
+            <?php  echo $matrix[$i][$j] = $k++; ?>
+            </td>
+        
+        <?php } ?> 
+        
+            </tr>
+        
+        <?php echo '<br>'; ?>
+        
+        <?php } ?>
+        
+    </table>    
 
-    for($i = 0; $i < $rows; $i++){
-        for($j = 0; $j < $columns; $j++){
-            echo $matrix[$i][$j] = $k++;
-        }
-        echo "<br>";
-    }
-
-    ?>
-
-    <table><tr>
-    <td>s</td>
-    <td>d</td>
-    <td>g</td></tr>
-    <tr><td>h</td>
-    <td>g</td>
-    <td>h</td></tr>
-    <tr><td>h</td>
-    <td>j</td>
-    <td>k</td>
-    </tr>
-    </table>
 </body>
 </html>
