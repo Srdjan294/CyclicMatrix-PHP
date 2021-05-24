@@ -22,8 +22,8 @@
     $matrix = array(array());
     $minRow = 0;
 	$minColumn = 0;
-	$maxRow = $columns-1;
-    $maxColumn = $rows-1;
+	$maxRow = $rows-1;
+    $maxColumn = $columns-1;
     
     while($i <= $rows*$columns) {
 				
