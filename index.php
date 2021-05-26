@@ -41,7 +41,7 @@
 
     <br>
 
-   <?php include 'cyclicmatrix.php'; ?>
+   <?php include 'spiralfill.php'; ?>
 
 </body>
 </html>
