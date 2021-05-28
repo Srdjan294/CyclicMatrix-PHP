@@ -1,22 +1,5 @@
 <?php
 
-    if (isset($_POST["rows"])){
-        $m = $_POST["rows"];
-    } else {
-        $m = null;
-        echo "Enter rows.";
-    }?>
-
-    <br>
-
-    <?php
-    
-    if (isset($_POST["columns"])){
-        $n = $_POST["columns"];
-    } else {
-        $n = null;
-        echo "Enter columns.";
-    }   
 // PHP program to fill a matrix with values
 // from 1 to n*n in spiral fashion.
  
@@ -70,7 +53,7 @@ function spiralFill($m, $n, &$a)
 } 
 // Driver Code
 
-spiralFill($m, $n, $a);
+$s = spiralFill($m, $n, $a);
 
 ?>
 

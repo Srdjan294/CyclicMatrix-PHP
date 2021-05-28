@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="change.js"></script>
 </head>
 <body>
-
+    <?php include 'dimensions.php'; ?>
+    <br><br>
     <form action="" method="post">
         <label for="rows">Rows:</label>
         
@@ -36,12 +38,23 @@
             ?>
         </select>
         <br><br>
+
+        <label for="start">Start from:</label>
+        <select name="start" id="start" onchange="change();">
+                <option value="topLeft">Top left corner</option>
+                <option value="topRight">Top right corner</option>
+        </select>        
+        <br><br>
         <input type="submit" name="submit" value="Submit">
     </form>
 
     <br>
 
-   <?php include 'cyclicMatrixTopRight.php'; ?>
+    <?php
+    
+    include 'change.php';
+
+    ?>
 
 </body>
 </html>
