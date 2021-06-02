@@ -40,7 +40,7 @@
         <br><br>
 
         <label for="start">Start from:</label>
-        <select name="start" id="start" onchange="change();">
+        <select name="start" id="start">
                 <option value="topLeft">Top left corner</option>
                 <option value="topRight">Top right corner</option>
         </select>        
